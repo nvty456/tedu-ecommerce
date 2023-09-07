@@ -4,13 +4,13 @@ using System.Text;
 using TeduEcommerce.Localization;
 using Volo.Abp.Application.Services;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 /* Inherit your application services from this class.
  */
-public abstract class TeduEcommerceAppService : ApplicationService
+public abstract class TeduEcommerceAdminAppService : ApplicationService
 {
-    protected TeduEcommerceAppService()
+    protected TeduEcommerceAdminAppService()
     {
         LocalizationResource = typeof(TeduEcommerceResource);
     }

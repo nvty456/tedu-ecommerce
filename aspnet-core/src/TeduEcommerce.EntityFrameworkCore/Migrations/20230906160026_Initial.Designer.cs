@@ -13,7 +13,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace TeduEcommerce.Migrations
 {
     [DbContext(typeof(TeduEcommerceDbContext))]
-    [Migration("20230705142651_Initial")]
+    [Migration("20230906160026_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -22,7 +22,7 @@ namespace TeduEcommerce.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("_Abp_DatabaseProvider", EfCoreDatabaseProvider.SqlServer)
-                .HasAnnotation("ProductVersion", "7.0.1")
+                .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);

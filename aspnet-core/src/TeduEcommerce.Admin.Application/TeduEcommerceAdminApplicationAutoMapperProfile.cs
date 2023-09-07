@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
-public class TeduEcommerceApplicationAutoMapperProfile : Profile
+public class TeduEcommerceAdminApplicationAutoMapperProfile : Profile
 {
-    public TeduEcommerceApplicationAutoMapperProfile()
+    public TeduEcommerceAdminApplicationAutoMapperProfile()
     {
         /* You can configure your AutoMapper mapping configuration here.
          * Alternatively, you can split your mapping configurations

@@ -1,7 +1,7 @@
 ﻿using TeduEcommerce.Localization;
 using Volo.Abp.AspNetCore.Mvc;
 
-namespace TeduEcommerce.Controllers;
+namespace TeduEcommerce.Admin.Controllers;
 
 /* Inherit your controllers from this class.
  */

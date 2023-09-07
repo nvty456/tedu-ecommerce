@@ -8,7 +8,7 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.VirtualFileSystem;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 [DependsOn(
     typeof(TeduEcommerceApplicationContractsModule),
@@ -19,7 +19,7 @@ namespace TeduEcommerce;
     typeof(AbpFeatureManagementHttpApiClientModule),
     typeof(AbpSettingManagementHttpApiClientModule)
 )]
-public class TeduEcommerceHttpApiClientModule : AbpModule
+public class TeduEcommerceAdminHttpApiClientModule : AbpModule
 {
     public const string RemoteServiceName = "Default";
 
@@ -32,7 +32,7 @@ public class TeduEcommerceHttpApiClientModule : AbpModule
 
         Configure<AbpVirtualFileSystemOptions>(options =>
         {
-            options.FileSets.AddEmbedded<TeduEcommerceHttpApiClientModule>();
+            options.FileSets.AddEmbedded<TeduEcommerceAdminHttpApiClientModule>();
         });
     }
 }

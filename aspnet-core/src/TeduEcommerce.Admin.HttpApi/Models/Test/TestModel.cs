@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TeduEcommerce.Models.Test;
+namespace TeduEcommerce.Admin.Models.Test;
 
 public class TestModel
 {

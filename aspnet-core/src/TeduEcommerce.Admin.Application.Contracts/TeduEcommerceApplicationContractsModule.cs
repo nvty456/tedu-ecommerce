@@ -7,7 +7,7 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 [DependsOn(
     typeof(TeduEcommerceDomainSharedModule),

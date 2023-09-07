@@ -1,4 +1,4 @@
-﻿namespace TeduEcommerce.Permissions;
+﻿namespace TeduEcommerce.Admin.Permissions;
 
 public static class TeduEcommercePermissions
 {

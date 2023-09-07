@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 public class Program
 {
@@ -27,12 +27,12 @@ public class Program
 
         try
         {
-            Log.Information("Starting TeduEcommerce.HttpApi.Host.");
+            Log.Information("Starting TeduEcommerce.Admin.HttpApi.Host.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host.AddAppSettingsSecretsJson()
                 .UseAutofac()
                 .UseSerilog();
-            await builder.AddApplicationAsync<TeduEcommerceHttpApiHostModule>();
+            await builder.AddApplicationAsync<TeduEcommerceAdminHttpApiHostModule>();
             var app = builder.Build();
             await app.InitializeApplicationAsync();
             await app.RunAsync();

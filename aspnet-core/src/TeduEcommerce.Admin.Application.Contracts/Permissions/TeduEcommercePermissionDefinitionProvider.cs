@@ -2,7 +2,7 @@
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Localization;
 
-namespace TeduEcommerce.Permissions;
+namespace TeduEcommerce.Admin.Permissions;
 
 public class TeduEcommercePermissionDefinitionProvider : PermissionDefinitionProvider
 {

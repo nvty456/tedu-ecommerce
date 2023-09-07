@@ -2,7 +2,7 @@
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.Threading;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 public static class TeduEcommerceDtoExtensions
 {

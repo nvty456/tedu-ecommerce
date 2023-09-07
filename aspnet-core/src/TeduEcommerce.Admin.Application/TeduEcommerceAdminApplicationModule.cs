@@ -7,7 +7,7 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 
-namespace TeduEcommerce;
+namespace TeduEcommerce.Admin;
 
 [DependsOn(
     typeof(TeduEcommerceDomainModule),
@@ -19,13 +19,13 @@ namespace TeduEcommerce;
     typeof(AbpFeatureManagementApplicationModule),
     typeof(AbpSettingManagementApplicationModule)
     )]
-public class TeduEcommerceApplicationModule : AbpModule
+public class TeduEcommerceAdminApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<TeduEcommerceApplicationModule>();
+            options.AddMaps<TeduEcommerceAdminApplicationModule>();
         });
     }
 }

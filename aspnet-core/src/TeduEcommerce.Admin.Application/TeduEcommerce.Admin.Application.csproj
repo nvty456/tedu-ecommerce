@@ -5,12 +5,12 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <RootNamespace>TeduEcommerce</RootNamespace>
+    <RootNamespace>TeduEcommerce.Admin</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TeduEcommerce.Domain\TeduEcommerce.Domain.csproj" />
-    <ProjectReference Include="..\TeduEcommerce.Application.Contracts\TeduEcommerce.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TeduEcommerce.Admin.Application.Contracts\TeduEcommerce.Admin.Application.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
